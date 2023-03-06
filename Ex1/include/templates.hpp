@@ -1,14 +1,11 @@
-#include <iostream>
 #include <array>
+#include <iostream>
 #include <vector>
 
 namespace Ex1
 {
     template <typename T>
-    T max(T a, T b)
-    {
-        return a > b ? a : b;
-    }
+    T max(T a, T b) { return a > b ? a : b; }
 
     template <typename T, typename U>
     T convert(U u)
@@ -58,10 +55,7 @@ namespace Ex1
     public:
         typedef T value_type;
 
-        void push(const T &t)
-        {
-            s.push_back(t);
-        }
+        void push(const T &t) { s.push_back(t); }
 
         T pop()
         {
@@ -70,10 +64,7 @@ namespace Ex1
             return t;
         }
 
-        bool empty() const
-        {
-            return s.empty();
-        }
+        bool empty() const { return s.empty(); }
 
     private:
         std::vector<T> s;
@@ -90,4 +81,4 @@ namespace Ex1
         return sum;
     }
 
-}
+} // namespace Ex1
