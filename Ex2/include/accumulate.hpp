@@ -1,3 +1,5 @@
+namespace Ex2
+{
 // accumulate function with two iterator arguments
 template <typename InputIterator, typename T>
 T accumulate(InputIterator first, InputIterator last, T init)
@@ -8,3 +10,4 @@ T accumulate(InputIterator first, InputIterator last, T init)
     }
     return init;
 }
+}  // namespace Ex2

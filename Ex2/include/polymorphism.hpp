@@ -1,5 +1,8 @@
 #include <iostream>
 
+namespace Ex2
+{
+
 // Dynamic polymorphism
 
 class Base
@@ -35,3 +38,4 @@ public:
     void g_impl() { std::cout << "StaticDerived::g()" << std::endl; }
     void h_impl() { std::cout << "StaticDerived::h()" << std::endl; }
 };
+}  // namespace Ex2

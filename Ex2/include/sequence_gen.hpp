@@ -1,3 +1,5 @@
+namespace Ex2
+{
 template <typename T>
 class SequenceGen
 {
@@ -9,3 +11,4 @@ private:
     T m_start;
     T m_step;
 };
+}  // namespace Ex2

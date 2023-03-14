@@ -10,7 +10,7 @@
 int main()
 {
     // Dynamic polymorphism
-    std::unique_ptr<Base> b = std::make_unique<Derived>();
+    std::unique_ptr<Ex2::Base> b = std::make_unique<Ex2::Derived>();
     b->f();  // Derived::f()
     b->g();  // Base::g()
     b->h();  // Base::h()
@@ -18,7 +18,7 @@ int main()
     // static_cast<Derived *>(b.get())->g1(); // Derived::g1()
 
     // Static polymorphism
-    StaticDerived sd;
+    Ex2::StaticDerived sd;
     sd.f();  // StaticDerived::f()
     sd.g();  // StaticDerived::g()
     sd.h();  // StaticDerived::h()
@@ -28,11 +28,11 @@ int main()
 
     // Accumulate
     std::vector<int> v1 = {1, 2, 3, 4, 5};
-    std::cout << std::endl << "accumulate(): " << accumulate(v1.begin(), v1.end(), 0) << std::endl;  // 15
+    std::cout << std::endl << "accumulate(): " << Ex2::accumulate(v1.begin(), v1.end(), 0) << std::endl;  // 15
 
     // Sequence generator
     std::vector<int> v2(20);
-    std::generate_n(v2.begin(), v2.size(), SequenceGen<int>(1, 2));
+    std::generate_n(v2.begin(), v2.size(), Ex2::SequenceGen<int>(1, 2));
     std::vector<int>::iterator it =
             std::find_if(v2.begin(), v2.end(), std::bind(std::greater<int>(), std::placeholders::_1, 4));
     std::cout << std::endl << "*it: " << *it << std::endl;
