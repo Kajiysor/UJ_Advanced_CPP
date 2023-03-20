@@ -11,3 +11,4 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 
 add_subdirectory(Ex1)
 add_subdirectory(Ex2)
+add_subdirectory(Ex3)
