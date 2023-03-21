@@ -5,7 +5,6 @@ namespace Ex3
 template <typename T, int N = 100, typename R = T *>
 class StlStack;
 
-// implement a StlStack and specialization which will work with normal tables and STL containers
 template <typename T, int N>
 class StlStack<T, N, T *>
 {
