@@ -17,4 +17,4 @@ add_subdirectory(Ex5)
 add_subdirectory(Ex6)
 add_subdirectory(Ex7)
 add_subdirectory(Ex9)
-
+add_subdirectory(Ex10)
